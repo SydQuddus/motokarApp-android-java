@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.motokarkotlin">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/motokaricon2"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/motokaricon2"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".StoriesActivity">
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".VehicleDetailsActivity">
+        </activity>
+        <activity android:name=".VehicleBooking">
+        </activity>
+        <activity android:name=".ViewProfile">
+        </activity>
+        <activity android:name=".EditPersonalInfo">
+        </activity>
+        <activity android:name=".MKwallet">
+        </activity>
+        <activity android:name=".LoginPage">
+        </activity>
+        <activity android:name=".RegistrationP1">
+        </activity>
+        <activity android:name=".RegistrationP2">
+        </activity>
+        <activity android:name=".RegistrationP3">
+        </activity>
+        <activity android:name=".RegistrationP4">
+        </activity>
+        <activity android:name=".CurrentTripReviewpage">
+        </activity>
+        <activity android:name=".reviewpage">
+        </activity>
+        <activity android:name=".ActivityCurrentTrip">
+        </activity>
+        <activity android:name=".ActivityUpcomingTrip">
+        </activity>
+        <activity android:name=".ActivityPastTrip">
+        </activity>
+        <activity android:name=".ActivityBookingGarage">
+        </activity>
+        <activity android:name=".ActivityVehicleGarage">
+        </activity>
+        <activity android:name=".ActivityHistoryGarage">
+        </activity>
+
+        <activity android:name=".addVehicle">
+        </activity>
+        <activity android:name=".RegistrationP5">
+        </activity>
+        <activity android:name=".ChangePassword">
+        </activity>
+        <activity android:name=".UploadProfilePicture">
+        </activity>
+        <activity android:name=".UploadVLicense">
+        </activity>
+        <activity android:name=".UploadGovID">
+        </activity>
+        <activity android:name=".TopupWallet">
+        </activity>
+        <activity android:name=".RegistrationP2a">
+        </activity>
+        <activity android:name=".RegistrationP2b">
+        </activity>
+        <activity android:name=".WithdrawWallet">
+        </activity>
+        <activity android:name=".inviteFriends">
+        </activity>
+        <activity android:name=".safetyCenter">
+        </activity>
+        <activity android:name=".feedback">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name">
+        </activity>
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.example.android.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths"></meta-data>
+        </provider>
+    </application>
+
+</manifest>

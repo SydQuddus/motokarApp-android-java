@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/HostoryContent" android:background="#121212">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/vehicleicon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/vehiclepicture" android:background="#ffffff"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainVerticalLayout"
+            app:layout_constraintTop_toBottomOf="@+id/vehiclepicture"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/vehicleDesc"
+                app:layout_constraintTop_toBottomOf="@+id/mainVerticalLayout"
+                android:paddingTop="20dp">
+            <TextView
+                    android:text="undefined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/vehiclename"
+                    android:gravity="left"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="#ffff"
+                    android:textSize="16.8sp"
+                    android:layout_weight="1"
+                    android:textAllCaps="true"/>
+            <TextView
+                    android:text="undefined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/vehiclerate" android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="#ffff"
+                    android:textSize="16.8sp"
+                    android:textAllCaps="true"/>
+        </LinearLayout>
+        <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                app:layout_constraintBottom_toBottomOf="@+id/vehicleDesc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/secondLayout"
+                app:layout_constraintTop_toBottomOf="@+id/divider1">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/calendericon"
+                    android:src="@drawable/finalcalender"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/calenderLayout"
+                    android:paddingLeft="10dp">
+                <TextView
+                        android:text="Rent Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/vehicleRentDate"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="#7D7D7D"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"/>
+                <TextView
+                        android:text="undefined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rentDateTime" android:fontFamily="@font/segoe_ui"
+                        android:textColor="#ffff"
+                        android:textSize="16.8sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                app:layout_constraintBottom_toBottomOf="@+id/secondLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/thirdLayout"
+                app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/picklocationicon"
+                    android:src="@drawable/finallocationicon"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30dp" />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/locationLayout"
+                    android:paddingLeft="10dp">
+                <TextView
+                        android:text="Pickup Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/pickupLocation"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="#7D7D7D"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"/>
+                <TextView
+                        android:text="undefined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PickupLocDetails" android:fontFamily="@font/segoe_ui"
+                        android:textColor="#ffff"
+                        android:textSize="16.8sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                app:layout_constraintBottom_toBottomOf="@+id/thirdLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/fourthLayout"
+                app:layout_constraintTop_toBottomOf="@+id/divider3">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/returnIcon"
+                    android:src="@drawable/finallocationicon"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30dp" />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/DroplocationLayout"
+                    android:paddingLeft="10dp">
+                <TextView
+                        android:text="Return Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/dropoffLocation"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="#7D7D7D"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"/>
+                <TextView
+                        android:text="undefined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dropOffLocDetails" android:fontFamily="@font/segoe_ui"
+                        android:textColor="#ffff"
+                        android:textSize="16.8sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                app:layout_constraintBottom_toBottomOf="@+id/fourthLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/fifthLayout"
+                app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/clockIcon"
+                    android:src="@drawable/finalclocknewicon"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30dp" />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/DurationLayout"
+                    android:paddingLeft="10dp">
+                <TextView
+                        android:text="Duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/duration"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="#7D7D7D"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"/>
+                <TextView
+                        android:text="undefined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/durationDetails" android:fontFamily="@font/segoe_ui"
+                        android:textColor="#ffff"
+                        android:textSize="16.8sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                app:layout_constraintBottom_toBottomOf="@+id/fifthLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/sixthLayout"
+                app:layout_constraintTop_toBottomOf="@+id/divider5">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/walletIcon"
+                    android:src="@drawable/ewallet"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30dp"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/RentDurationLayout"
+                    android:paddingLeft="10dp">
+                <TextView
+                        android:text="Total Earning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/Cost"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="#7D7D7D"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"/>
+                <TextView
+                        android:text="undefined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/RentDurationDetails" android:fontFamily="@font/segoe_ui"
+                        android:textColor="#ffff"
+                        android:textSize="16.8sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                app:layout_constraintBottom_toBottomOf="@+id/sixthLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

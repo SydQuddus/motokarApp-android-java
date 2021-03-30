@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WithdrawWallet"
+        android:background="#121212"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/MKwallet">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/MKwalletDetails">
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" app:srcCompat="@drawable/ic_chevron_left_green_24dp"
+                    android:id="@+id/backButton"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="-10dp"/>
+            <TextView
+                    android:text="Withdraw money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/withdrawText"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="23sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+            <TextView
+                    android:text="Enter amount to withdraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/balanceText"
+                    android:textColor="#7D7D7D"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="21sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/withdrawRequest" android:layout_weight="1"
+                        android:textColor="#03A1A4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="30sp"
+                        android:gravity="right"
+                        android:backgroundTint="#7D7D7D"
+                        android:layout_marginLeft="85dp"/>
+                <TextView
+                        android:text="@string/MYCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="1"
+                        android:textColor="#03A1A4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="30sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/OptionsButton"
+                    android:layout_marginTop="150dp">
+
+                <ImageView
+                        android:layout_width="280dp"
+                        android:layout_height="100dp" app:srcCompat="@drawable/withdraw"
+                        android:id="@+id/withdrawButton"
+                        android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>>
+
+</ScrollView>

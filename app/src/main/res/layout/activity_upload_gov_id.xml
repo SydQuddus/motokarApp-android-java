@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UploadGovID"
+        android:background="#121212"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/safetyCenterPage">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/settingDetails"
+            app:layout_constraintTop_toTopOf="@+id/safetyCenterPage">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/topButtons">
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" app:srcCompat="@drawable/ic_chevron_left_green_24dp"
+                    android:id="@+id/backButton"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="-10dp"/>
+        </LinearLayout>
+        <TextView
+                android:text="Upload government ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/PageTitleText"
+                android:textColor="#FFFFFF"
+                app:fontFamily="@font/segoe_ui_bold"
+                android:textSize="23sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="180dp" android:id="@+id/imgview" android:layout_gravity="center_horizontal"
+                app:srcCompat="@mipmap/ic_launcher"/>
+        <TextView
+                android:text="Please click on import to import government ID image from your phone, make sure to select a decent quality image. We will evaluate the ID. After import, click on upload to save."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/message2"
+                android:fontFamily="@font/segoe_ui"
+                android:textSize="16.8sp"
+                android:textColor="#7D7D7D"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+            >
+                <TextView
+                        android:text="What would you like to do?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView"
+                        android:textColor="#FFFFFF"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="18sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/OptionsButton">
+
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="70dp" app:srcCompat="@drawable/importimage"
+                            android:id="@+id/importButton"
+                            android:layout_gravity="center" android:layout_marginBottom="10dp"/>
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="70dp" app:srcCompat="@drawable/uploadimage"
+                            android:id="@+id/uploadButton"
+                            android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>>
+
+</ScrollView>

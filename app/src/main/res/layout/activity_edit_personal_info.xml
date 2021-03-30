@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:context=".EditPersonalInfo"
+        android:background="#121212"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/editPersonalInfo">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/editPersonalInfo" android:id="@+id/personalInfoDetails">
+            <LinearLayout
+                    android:id="@+id/layoutTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#121212"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="@id/layoutMain"
+                    android:layout_marginTop="20dp">
+                <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_chevron_left_green_24dp"
+                        android:id="@+id/backButton"
+                        android:layout_marginLeft="-11dp"
+                        android:layout_gravity="center_vertical"/>
+                <TextView
+                        android:text="Save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/buttonSave" android:layout_weight="1"
+                        android:textColor="#03A1A4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <TextView
+                    android:text="Edit personal info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/editPersonalinfoText"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="23sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/profilePicture"
+                    android:layout_gravity="center_horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:layout_gravity="center"/>
+                <TextView
+                        android:text="upload profile picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profilePictureStatus"
+                        android:textColor="#BB0E04"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/fName">
+                <TextView
+                        android:text="First Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/fNameText"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/fNameInput"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="18sp"
+                        android:backgroundTint="#121212"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginBottom="20dp"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/lName">
+                <TextView
+                        android:text="Last Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView5"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/lNameInput"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="18sp"
+                        android:backgroundTint="#121212"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginBottom="20dp"
+            />
+            <!--<LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/gender">
+                <TextView
+                        android:text="Gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/genderText"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"/>
+                <Spinner
+                        android:id="@+id/spinnerGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#121212"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginBottom="20dp"
+            />-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/birthdate">
+                <TextView
+                        android:text="Birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/birthdateText"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"/>
+                <TextView
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/birthdateInput"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider19"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginBottom="20dp"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/email">
+                <TextView
+                        android:text="Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/emailText"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/emailInput"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="18sp"
+                        android:backgroundTint="#121212"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider20"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginBottom="20dp"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/phoneNumber">
+                <TextView
+                        android:text="Phone number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/phoneNumberText"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui_bold"
+                        android:textSize="14sp"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/phoneNumberInput"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="18sp"
+                        android:backgroundTint="#121212"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider21"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/govID"
+                    android:layout_marginTop="20dp">
+                <TextView
+                        android:text="Government ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/govIDText"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="17sp"
+                        android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider22"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/vLicense"
+                    android:layout_marginTop="20dp">
+                <TextView
+                        android:text="Vehicle's License"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/vLicenseText"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="17sp"
+                        android:layout_marginBottom="25dp"/>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider23"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginBottom="20dp"
+            />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ViewProfile"
+        android:background="#121212"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/viewProfile">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/viewProfileItems"
+                app:layout_constraintTop_toTopOf="@id/viewProfile">
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/ic_chevron_left_green_24dp"
+                    android:id="@+id/backButton"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="-10dp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/namePicture">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="match_parent" android:id="@+id/nameJoin"
+                        android:layout_marginTop="15dp">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/nameText"
+                                android:text="Hello, I'm "
+                                android:textColor="#FFFFFF"
+                                app:fontFamily="@font/segoe_ui_bold"
+                                android:textSize="20sp"/>
+                        <TextView
+                                android:text="@string/undefined"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/profile_name"
+                                android:textColor="#FFFFFF"
+                                app:fontFamily="@font/segoe_ui_bold"
+                                android:textSize="20sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Joined in "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/joinText"
+                                android:textColor="#7D7D7D"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:layout_marginTop="-3dp"/>
+                        <TextView
+                                android:text="@string/undefined"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/joinDate"
+                                android:textColor="#7D7D7D"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:layout_marginTop="-3dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:gravity="end"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/storiesReview"
+                    android:layout_marginTop="8dp">
+                <TextView
+                        android:text="my Stories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/storiesReviewText"
+                        android:textColor="#BB0E04"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="8dp"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/reviewer1_picture"
+                                android:src="@mipmap/ic_launcher"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="3dp"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="@color/colorPrimary"/>
+                        <TextView
+                                android:text="@string/undefined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/reviewer1_text"
+                                android:textColor="#B4B4B4"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/reviewer2_picture"
+                                android:src="@mipmap/ic_launcher"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="3dp"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="@color/colorPrimary"/>
+                        <TextView
+                                android:text="@string/undefined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/reviewer2_text"
+                                android:textColor="#B4B4B4"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/reviewer3_picture"
+                                android:src="@mipmap/ic_launcher"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="3dp"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="@color/colorPrimary"/>
+                        <TextView
+                                android:text="@string/undefined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/reviewer3_text"
+                                android:textColor="#B4B4B4"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+            />
+            <TextView
+                    android:text="About"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/aboutText"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="14sp"/>
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/about"
+                    android:id="@+id/aboutIcon"
+                    android:layout_marginLeft="-8dp"
+                    android:layout_marginTop="1dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="start|top"
+                    android:ems="10"
+                    android:id="@+id/aboutDescText"
+                    android:text="Tap here to write a brief introduction about yourself to gain confidence from rentors"
+                    android:textColor="#B4B4B4"
+                    app:fontFamily="@font/segoe_ui"
+                    android:textSize="14sp"/>
+
+            <View
+                    android:id="@+id/divider6"
+                    android:layout_width="30dp"
+                    android:layout_height="2.5dp"
+                    android:background="#7D7D7D"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="2dp"
+            />
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/userLocation"
+                    android:layout_marginTop="3.5dp">
+                <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp" app:srcCompat="@drawable/housewhite"
+                        android:id="@+id/cityIcon" android:layout_weight="1"
+                        android:layout_marginRight="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress"
+                        android:ems="17"
+                        android:text="Enter your city, and your country here"
+                        android:id="@+id/userAddress"
+                        android:textColor="#B4B4B4"
+                        app:fontFamily="@font/segoe_ui"
+                        android:textSize="14sp"
+                        android:gravity="left"
+                        android:backgroundTint="#121212"/>
+
+            </LinearLayout>
+
+            <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+            />
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </TableLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/provide">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/userProvide"
+                            android:text="@string/undefined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            app:fontFamily="@font/segoe_ui_bold"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="18dp"/>
+                    <TextView
+                            android:text=" provided"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/provideText"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+                            app:fontFamily="@font/segoe_ui_bold"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="18dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/userProvideContent1"
+                        android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/provideEmail" android:gravity="start">
+                        <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp" app:srcCompat="@drawable/tick"
+                                android:id="@+id/tick1Image"/>
+                        <TextView
+                                android:text="Email address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/provideEmailText"
+                                android:layout_weight="1"
+                                android:textColor="#B4B4B4"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/provideHP"
+                            android:layout_marginRight="100dp">
+                        <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp" app:srcCompat="@drawable/tick"
+                                android:id="@+id/tick2Image" android:layout_weight="1"/>
+                        <TextView
+                                android:text="Phone number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/provideHPText"
+                                android:layout_weight="1"
+                                android:textColor="#B4B4B4"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="8dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" android:id="@+id/provideVLincense"
+                            android:gravity="start">
+                        <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp" app:srcCompat="@drawable/tick"
+                                android:id="@+id/tick3Image"/>
+                        <TextView
+                                android:text="Vehicle's license"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="#B4B4B4"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/provideGovID"
+                            android:layout_marginRight="97.5dp">
+                        <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp" app:srcCompat="@drawable/tick"
+                                android:id="@+id/tick4Image" android:layout_weight="1"/>
+                        <TextView
+                                android:text="Government ID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="#B4B4B4"
+                                app:fontFamily="@font/segoe_ui"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="8dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                    android:id="@+id/divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4B4C50"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+            />
+            <!-- <TextView
+                    android:text="Undefined review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/reviewList"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="14sp"/> -->
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

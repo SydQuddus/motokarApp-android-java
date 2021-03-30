@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_trips_current"
+            android:title="Current" />
+
+    <!--<item-->
+            <!--android:id="@+id/navigation_trips_upcoming"-->
+            <!--android:title="Upcoming" />-->
+
+   <item
+            android:id="@+id/navigation_trips_past"
+            android:title="Past" />
+</menu>

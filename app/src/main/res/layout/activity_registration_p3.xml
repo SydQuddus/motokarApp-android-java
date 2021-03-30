@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/linearLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#121212"
+android:orientation="vertical"
+tools:context=".RegistrationP3">
+
+
+<LinearLayout
+    android:id="@+id/layoutTop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#121212"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="@id/linearLayout">
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_chevron_left_green_24dp"
+            android:id="@+id/backButton"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTop"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSection" android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+        <LinearLayout
+                android:id="@+id/layoutCreatePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="Create a password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/passwordText"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/layoutPasswordTerms"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+            <TextView
+                    android:id="@+id/titlePasswordInclude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/termsPassword"
+                    android:textAllCaps="false"
+                    android:textColor="#7D7D7D"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/segoe_ui"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/userPass">
+            <TextView
+                    android:text="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/passText"
+                    android:textColor="#B4B4B4"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/passwordInput"
+                    android:textColor="#B4B4B4"
+                    app:fontFamily="@font/segoe_ui"
+                    android:textSize="18sp"
+                    android:backgroundTint="#121212"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                android:layout_marginBottom="20dp"
+        />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/userConfirmPass"
+                android:layout_marginTop="30dp">
+            <TextView
+                    android:text="Confirm password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/userConfirmPassText"
+                    android:textColor="#B4B4B4"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/confirmPassInput"
+                    android:textColor="#B4B4B4"
+                    app:fontFamily="@font/segoe_ui"
+                    android:textSize="18sp"
+                    android:backgroundTint="#121212"/>
+        </LinearLayout>
+
+        <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                android:layout_marginBottom="20dp"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#232429" android:id="@+id/buttonSection" android:paddingLeft="15dp"
+            android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp">
+        <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#03A1A4"
+                android:text="@string/next"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

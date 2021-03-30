@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">MotoKar</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_trips">Trips</string>
+    <string name="title_garage">Garage</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_trips">TripsActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_garage">GarageActivity</string>
+    <string name="undefined">undefined</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Syed's String
+    <string name="MYCurrency">MYR</string>
+    <string name="MKwallet_Page">MK Wallet</string>
+
+    //Farhan's String
+    <string name="log_in">Log In</string>
+    <string name="user_name">User Name</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="titleEmail">Email Address</string>
+    <string name="titleSignup">Sign Up</string>
+    <string name="showpass">Show</string>
+    <string name="rememberme">Remember Me</string>
+    <string name="loginFB">Login with Facebook</string>
+    <string name="registration">Registration</string>
+    <string name="fullname">Full Name</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="next">Next</string>
+    <string name="datebirth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="personal_documents">Personal Documents</string>
+    <string name="goverment_id">Goverment ID</string>
+    <string name="termsID">-- TERMS AND COND GOV ID --</string>
+    <string name="signup">SIGN UP</string>
+    <string name="tellName">Tell us your name</string>
+    <string name="last_name">Last Name</string>
+    <string name="firstname">First Name</string>
+    <string name="youremail">And your email?</string>
+    <string name="offerEmail">We will send you The promotions, special offers, inspiration, and policy udates via email.
+        Other people will not see your Birthday
+    </string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="whenBday">When is your birthday?</string>
+    <string name="termsAge">You must be at least 18 years old to use MotoKar.</string>
+    <string name="todo">TODO</string>
+    <string name="title_password">Create a password</string>
+    <string name="termsPassword">Your Password must include a symbol or number, and be at least 6 characters long.
+    </string>
+    <string name="dialogTitle">The owner will be notified soon!</string>
+    <string name="dialogMessage">Are you sure you want to cancel your booking?</string>
+
+    <string name="dialogTitleDelete">This vehicle will be deleted!</string>
+    <string name="dialogMessageDelete">Are you sure you want to delete this vehicle?</string>
+
+    <string name="dialogTitleCancel">The rentee will be notified soon!</string>
+    <string name="dialogMessageCancel">Are you sure you want to cancel the booking?</string>
+
+    <string-array name="cartype">
+        <item>tap to select</item>
+        <item>  Sedan</item>
+        <item>  Hatchback</item>
+        <item>  Sports</item>
+        <item>  SUV</item>
+        <item>  Motorcycle</item>
+    </string-array>
+
+    <string-array name="transmission">
+        <item>tap to select</item>
+        <item>  Auto</item>
+        <item>  Manual</item>
+    </string-array>
+
+    <string-array name="seats">
+        <item>tap to select</item>
+        <item>  two</item>
+        <item>  five</item>
+        <item>  eight</item>
+        <item>  ten</item>
+        <item>  twelve</item>
+        <!-- <item>More Than Eleven</item> -->
+    </string-array>
+
+    <string-array name="gender_items">
+
+    <item>tap to select</item>
+
+    <item>Male</item>
+
+    <item>Female</item>
+
+</string-array>
+</resources>

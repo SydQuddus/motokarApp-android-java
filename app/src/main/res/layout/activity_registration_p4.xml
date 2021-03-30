@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/linearLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#121212"
+android:orientation="vertical"
+tools:context=".RegistrationP4">
+
+
+<LinearLayout
+    android:id="@+id/layoutTop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#121212"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="@id/linearLayout">
+
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_chevron_left_green_24dp"
+            android:id="@+id/backButton"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+</LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTop"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSection" android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+        <LinearLayout
+                android:id="@+id/layoutTellUS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="When is your birthdate?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/birthdateText"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/email"
+                android:layout_marginTop="30dp">
+            <TextView
+                    android:text="birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/emailText"
+                    android:textColor="#B4B4B4"
+                    app:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/birthdateInput"
+                    android:textColor="#B4B4B4"
+                    app:fontFamily="@font/segoe_ui"
+                    android:textSize="18sp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:backgroundTint="#121212"/>
+
+        </LinearLayout>
+
+        <View
+                android:id="@+id/dividerLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4B4C50"
+                android:layout_marginBottom="10dp"
+        />
+
+        <LinearLayout
+                android:id="@+id/layoutAgeTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/titleAgeTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No matter how old are you, we welcome you with open heart, but of course you need to be at least 18 years old in order to rent any vehicle available at MotoKar.\n\nYou may skip this step and set it later."
+                    android:textColor="#7D7D7D"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/segoe_ui"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#232429" android:id="@+id/buttonSection" android:paddingLeft="15dp"
+            android:gravity="right"
+            android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp">
+        <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#03A1A4"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

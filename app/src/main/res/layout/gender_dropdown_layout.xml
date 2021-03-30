@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="choose gender"
+          android:textColor="#B4B4B4"
+          android:fontFamily="@font/segoe_ui"
+          android:textSize="18sp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:background="#000000">
+
+</TextView>
